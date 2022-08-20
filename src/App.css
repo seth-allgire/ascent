@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Mulish-Black";
+  src: url(./assets/fonts/Mulish-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url(./assets/fonts/Mulish-Bold.ttf) format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Mulish-ExtraBold";
+  src: url(./assets/fonts/Mulish-ExtraBold.ttf) format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Mulish-ExtraLight";
+  src: url(./assets/fonts/Mulish-ExtraLight.ttf) format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "Mulish-Light";
+  src: url(./assets/fonts/Mulish-Light.ttf) format("truetype");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "Mulish-Medium";
+  src: url(./assets/fonts/Mulish-Medium.ttf) format("truetype");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Mulish-Regular";
+  src: url(./assets/fonts/Mulish-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-SemiBold";
+  src: url(./assets/fonts/Mulish-SemiBold.ttf) format("truetype");
+}
+
+body {
+  font-family: "Mulish-Regular";
+  margin: 64px 0px 20px 0px;
+}
+
+#menu-logo {
+  height: 40px;
+  padding-right: 10px;
+}
+
+.link-container {
+  position: absolute;
+  right: 40px;
+  /* padding-top: 5px; */
+}
+
+.link {
+  color: #ffffff;
+  font-family: "Mulish-Light";
+  text-decoration: none;
+  margin: 4px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  position: relative;
+  font-weight: 800;
+}
+
+.link:hover,
+.active {
+  text-decoration: underline;
+}
+
+.home-head {
+  background-image: url(/src/assets/homeHeader.jpg);
+  background-color: #ffffff3a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-blend-mode: screen;
+  padding-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.orange-container {
+  background-color: #d2604fbe;
+  max-width: 55vw;
+  font-family: "Mulish-ExtraBold";
+  line-height: 60px;
+  font-size: 60px;
+  color: #ffffff;
+  padding: 20px 0px 40px 80px;
+}
+
+.catch-phrase {
+  font-family: "Mulish-Regular";
+  padding-top: 10px;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+#home-head-logo {
+  display: block;
+  margin: -75px auto 0 auto;
+  height: 200px;
 }
