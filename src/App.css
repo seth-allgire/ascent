@@ -39,7 +39,8 @@
 
 body {
   font-family: "Mulish-Regular";
-  margin: 64px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  height: 200vh;
 }
 
 #menu-logo {
@@ -71,7 +72,7 @@ body {
 }
 
 .home-head {
-  background-image: url(/src/assets/homeHeader.jpg);
+  /* background-image: url(/src/assets/homeHeader.jpg);
   background-color: #ffffff3a;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +81,7 @@ body {
   background-blend-mode: screen;
   padding-top: 100px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 100px; */
 }
 
 .orange-container {
@@ -91,6 +92,8 @@ body {
   font-size: 60px;
   color: #ffffff;
   padding: 20px 0px 40px 80px;
+  margin-top: 50vh;
+  margin-bottom: 40vh;
 }
 
 .catch-phrase {
@@ -102,6 +105,36 @@ body {
 
 #home-head-logo {
   display: block;
-  margin: -75px auto 0 auto;
-  height: 200px;
+  margin: 0 auto 0 auto;
+  height: 250px;
+}
+
+.home-content-container {
+  padding-left: 40px;
+  display: flex;
+  flex-flow: row;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.vision-container {
+  flex-basis: 45%;
+}
+
+.large-print {
+  font-family: "Mulish-ExtraBold";
+  font-size: 35px;
+}
+.triangle-image-stuff {
+  flex-basis: 50%;
+  overflow: visible;
+  /* margin-bottom: -20px; */
+  /* padding-bottom: 50px; */
+}
+
+#famTriangle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
