@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Menu from "./components/Menu";
-import HomePage from "./components/HomePage";
+import ParallaxHome from "./components/ParallaxHome";
 import AboutPage from "./components/AboutPage";
 import PackagesPage from "./components/PackagesPage";
 import WorkshopsPage from "./components/WorkshopsPage";
@@ -17,7 +17,7 @@ export default function App() {
     <Router>
       <Menu />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<ParallaxHome />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/packages" element={<PackagesPage />} />
         <Route path="/workshops" element={<WorkshopsPage />} />

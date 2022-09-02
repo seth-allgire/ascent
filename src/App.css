@@ -39,7 +39,8 @@
 
 body {
   font-family: "Mulish-Regular";
-  margin: 64px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  /* height: 200vh; */
 }
 
 #menu-logo {
@@ -71,7 +72,7 @@ body {
 }
 
 .home-head {
-  background-image: url(/src/assets/homeHeader.jpg);
+  /* background-image: url(/src/assets/homeHeader.jpg);
   background-color: #ffffff3a;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,17 +81,20 @@ body {
   background-blend-mode: screen;
   padding-top: 100px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 100px; */
 }
 
 .orange-container {
   background-color: #d2604fbe;
-  max-width: 55vw;
+  /* max-width: 55vw; */
+  width: fit-content;
   font-family: "Mulish-ExtraBold";
   line-height: 60px;
   font-size: 60px;
   color: #ffffff;
-  padding: 20px 0px 40px 80px;
+  padding: 20px 80px 40px 80px;
+  margin-top: 50vh;
+  margin-bottom: 40vh;
 }
 
 .catch-phrase {
@@ -102,6 +106,121 @@ body {
 
 #home-head-logo {
   display: block;
-  margin: -75px auto 0 auto;
-  height: 200px;
+  margin: 0 auto 0 auto;
+  height: 250px;
+}
+
+.home-content-container {
+  display: flex;
+  flex-flow: row;
+  color: #384747;
+  padding-left: 40px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  justify-content: center;
+  height: fit-content;
+}
+
+.vision-container {
+  flex-basis: 45%;
+}
+
+.large-print {
+  font-family: "Mulish-ExtraBold";
+  font-size: 35px;
+}
+
+.section-title {
+  padding-left: 70px;
+  color: #384747;
+}
+
+.triangle-image-stuff {
+  flex-basis: 50%;
+}
+
+/* .cards-wrapper {
+  align-items: center;
+} */
+
+.cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: calc((100% / 3) - 30px);
+  justify-content: center;
+}
+
+.flip-card {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish-Bold";
+  width: 300px;
+  height: 300px;
+  margin: 20px 10px 10px 20px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: #384747;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  margin: 20px 20px 10px 20px;
+}
+
+.card-title {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.card-content {
+  font-size: large;
+}
+
+.card-button {
+  height: 40px;
+  width: 120px;
+  border: "none";
+  background-color: #d2604f;
+  font-family: "Mulish-Bold";
+  font-size: medium;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #d2604fab;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 15px;
+  left: 90px;
+
+  width: calc(100% - 40px);
 }
