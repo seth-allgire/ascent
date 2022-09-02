@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Menu from "./components/Menu";
 import ParallaxHome from "./components/ParallaxHome";
-// import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import PackagesPage from "./components/PackagesPage";
 import WorkshopsPage from "./components/WorkshopsPage";
